@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Playball&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+.plus-jarkata {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+}
+
+.anton {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 2px;
+}
+
+p,
+ul {
+  font-family: "Rubik", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 2px;
+}
+
+.sec_1 {
+  background: url("./assets/sec1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.fe-img56 {
+  background: url("./assets/fe-img56.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.text-grad1 {
+  background: linear-gradient(
+    90deg,
+    #8b8347 0%,
+    #fcb236 31.01%,
+    #f3808e 64.1%,
+    #78aac5 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-grad2 {
+  background: linear-gradient(
+    99deg,
+    #01d8fd 13.85%,
+    #fc65f8 49.52%,
+    #ffba00 87.9%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.jump {
+  transition: transform 0.3s ease-in-out;
+  transform: translateZ(0); /* ensures smooth rendering */
+}
+
+.jump:hover {
+  transform: translateY(-8px);
+}
+
+.bounce {
+  animation: arrowBounce 1s infinite ease-in-out;
+}
+
+@keyframes arrowBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.buy {
+  background: var(
+    --Linear,
+    linear-gradient(
+      99deg,
+      rgba(1, 216, 253, 0.3) 13.85%,
+      rgba(252, 101, 248, 0.3) 49.52%,
+      rgba(255, 186, 0, 0.3) 87.9%
+    )
+  );
+}
